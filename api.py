@@ -39,8 +39,6 @@ def upload_gpx():
     response = requests.post(STRAVA_UPLOAD_URL, headers=headers, files=files, data=data)
     return jsonify(response.json())
 
-if __name__ == "__main__":
-    app.run(debug=True)
 
 if __name__ == "__main__":
     from flask import Flask
