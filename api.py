@@ -48,6 +48,5 @@ if __name__ == "__main__":
     @app.route("/")
     def home():
         return "Flask fonctionne sur Vercel ! 🚀"
-
-    app.run(debug=True)
+)
     
