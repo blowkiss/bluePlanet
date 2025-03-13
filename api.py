@@ -39,14 +39,8 @@ def upload_gpx():
     response = requests.post(STRAVA_UPLOAD_URL, headers=headers, files=files, data=data)
     return jsonify(response.json())
 
-
-if __name__ == "__main__":
-    from flask import Flask
-
-    app = Flask(__name__)
-
-    @app.route("/a")
-    def home():
-        return "Flask fonctionne sur Vercel ! 🚀"
+@app.route("/")
+def home():
+    return "Flask fonctionne sur Vercel ! 🚀"
 
     
