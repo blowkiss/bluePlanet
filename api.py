@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     app = Flask(__name__)
 
-    @app.route("/")
+    @app.route("/a")
     def home():
         return "Flask fonctionne sur Vercel ! 🚀"
 
