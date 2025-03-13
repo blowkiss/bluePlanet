@@ -39,7 +39,7 @@ def upload_gpx():
     response = requests.post(STRAVA_UPLOAD_URL, headers=headers, files=files, data=data)
     return jsonify(response.json())
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def home():
     return "Flask fonctionne sur Vercel ! 🚀"
 
